@@ -13,6 +13,11 @@ import pickle
 # DYNAMIC PROGRAMMING!
 # DON"T SOLVE THE SAME PROBLEM TWICE!
 
+# MEMOIZATION STRATEGY!!
+# I needed a poll of memoized data
+# I was going to make the pool but I realized that I could just instead BUILD the pool from the different
+# multiplicities of the input data and I'd have a guranteed good dataset for my function
+
 memorize = {}
 uses = 0
 
