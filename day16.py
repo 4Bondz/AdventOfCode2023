@@ -1,10 +1,13 @@
 import sys
 
+
 # Did it take 16 days?
 # YES
 # Did you #GETGOOD?
 # Sorta
 # I don't love that I had to add in a "base" case but its fine.
+
+# TODO: Refactor to make this look nice
 
 def handleBeam0(resolver, startx, starty, direction):
     match resolver[starty][startx].value:
@@ -139,6 +142,7 @@ class Tile:
         self.isActive = isActive
         self.value = value
 
+
 def resetResolver():
     with open("./day16input.txt", "r") as f:
         lines = f.readlines()
@@ -148,6 +152,7 @@ def resetResolver():
         for y, v in enumerate(line):
             resolver[x][y] = Tile(isActive=False, value=v)
     return resolver
+
 
 def main():
     resolver = resetResolver()
